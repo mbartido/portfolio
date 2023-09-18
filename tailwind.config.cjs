@@ -19,9 +19,9 @@ module.exports = {
 		},
 		fontFamily: {
 			// Headings
-			sans: ['Inter', 'sans-serif'],
+			sans: ['serenity', 'sans-serif'],
 			// Base text
-			monospace: ['Inconsolata', 'monospace'],
+			monospace: ['owners-text', 'monospace'],
 		},
 		fontSize: {
 			xs: '.75rem',
