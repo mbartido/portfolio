@@ -1,7 +1,8 @@
 ---
 inProgress: false
-title: Project title
-img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+title: Deserve
+img_alt: Deserve Cards
+link: https://www.deserve.com
+tags: ['React', 'React Native']
+imagePath: /src/assets/images/deserve_logo.png
 ---

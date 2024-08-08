@@ -1,7 +1,8 @@
 ---
 inProgress: false
-title: Project title
-img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+title: Univfy
+img_alt: Univfy Report
+link: https://www.univfy.com
+tags: ['Vue', 'CSS', 'Typescript']
+imagePath: /src/assets/images/univfy.png
 ---
