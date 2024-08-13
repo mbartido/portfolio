@@ -18,14 +18,14 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,svg}"`);
 ---
 
-<section class="w-full p-4 md:w-1/2 lg:w-1/3" style="min-height: 400px; height: 100%;">
+<section class="w-full p-4 md:w-1/2 lg:w-1/3">
 	<article
 		data-testId="card"
 		class="rounded-xl bg-white p-3 shadow-lg duration-100 hover:scale-105 hover:transform hover:shadow-xl"
 		style="height: 100%;"
 	>
-		<a class="flex flex-col flex-wrap justify-between" href={url} aria-label="link to project" target="_" style="height: 100%">
-			<div class="relative flex items-center justify-center overflow-hidden rounded-xl">
+		<a class="flex flex-col flex-wrap justify-between" href={url} aria-label="link to project" target="_">
+			<div class="relative flex items-center justify-center overflow-hidden rounded-xl card-img-container">
 				<Image
 					src={imagePath ? imagePath : projectImage}
 					alt={alt}
@@ -42,3 +42,10 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 		</a>
 	</article>
 </section>
+
+<style>
+    .card-img-container {
+		min-height: 335px;
+		height: 100%;
+	}
+</style>
