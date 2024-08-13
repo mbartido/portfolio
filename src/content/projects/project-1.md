@@ -4,5 +4,5 @@ title: Univfy
 img_alt: Univfy Report
 link: https://www.univfy.com
 tags: ['Vue', 'CSS', 'Typescript']
-imagePath: /src/assets/images/univfy.png
+imagePath: /univfy.png
 ---
