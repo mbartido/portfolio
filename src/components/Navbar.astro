@@ -27,8 +27,8 @@ const menuitems = [
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
 		</div> -->
-		<MenuItems class="mt-2 hidden w-full lg:mt-0 lg:flex lg:w-auto">
-			<ul class="flex flex-col lg:flex-row lg:gap-3">
+		<MenuItems class="mt-2 w-full lg:mt-0 lg:flex lg:w-auto">
+			<ul class="flex flex-col lg:flex-row lg:gap-4">
 				{
 					menuitems.map((item) => (
 						<>
@@ -36,7 +36,7 @@ const menuitems = [
 								<a
 									aria-label="navigation link"
 									href={item.path}
-									class="flex py-2 text-black hover:text-purple dark:text-white dark:hover:text-purple lg:px-3"
+									class="flex py-4 text-black hover:text-purple dark:text-white dark:hover:text-purple lg:px-4"
 								>
 									{item.title}
 								</a>
@@ -44,7 +44,7 @@ const menuitems = [
 						</>
 					))
 				}
-				<li class="mt-1"><ToggleTheme /></li>
+				<li class="mt-3"><ToggleTheme /></li>
 			</ul>
 		</MenuItems>
 	</Astronav>
