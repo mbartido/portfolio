@@ -32,6 +32,7 @@ const projects = await getCollection('projects', ({ data }) => {
 					alt={project.data.img_alt}
 					tags={project.data.tags}
 					imagePath={project.data.imagePath}
+					description={project.data.description}
 				/>
 			))
 		}

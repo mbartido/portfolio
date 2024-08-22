@@ -11,9 +11,10 @@ interface Props {
 	title?: string;
 	tags: string[];
 	children?: HTMLElement | HTMLElement[];
+	description?: string
 }
 
-const { imagePath, url = '#', imageUrl = '', alt = 'Project image', title = 'Project title', tags = ['Tags'] } = Astro.props;
+const { imagePath, url = '#', imageUrl = '', alt = 'Project image', title = 'Project title', tags = ['Tags'], description = 'Description'} = Astro.props;
 // const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif,svg}');
 // if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,svg}"`);
 ---
@@ -39,6 +40,9 @@ const { imagePath, url = '#', imageUrl = '', alt = 'Project image', title = 'Pro
 			<div style="height: 80px;">
 				<h3 class="text-xl text-purple lg:text-2xl">{title}</h3>
 				<Tags tags={tags} />
+			</div>
+			<div style="height: 80px;">
+				<p class="text-md text-black">{description}</p>
 			</div>
 		</a>
 	</article>
